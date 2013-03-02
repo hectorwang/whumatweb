@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/tkorays/whumatweb">View on GitHub</a>
 
           <h1 id="project_title">Whumatweb</h1>
-          <h2 id="project_tagline">信号处理网上实验室</h2>
+          <h2 id="project_tagline">数字信号处理网上实验室</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/tkorays/whumatweb/zipball/master">Download this project as a .zip file</a>
@@ -31,32 +31,49 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+        <h3>欢迎来到"数字信号处理实验室"的文档页面。</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <p>我们已经默认你早已了解此应用的用处，想必你也大概知道我们将要用到的技术。不过，鉴于科研小组的新成员对这些不是很了解，在此处我还是列出这个应用所用到的技术。</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<pre><code>网页前端(html+css+js)
+网页后台(php+mysql+apache)
+web服务器搭建(apache+mysql+php)
+matlab web server服务的配置
+matlab中m文件的编写
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <p>对于服务器的配置您不必自己研究，可以找许剑帮你配置好。</p>
 
-<h3>Designer Templates</h3>
+        <h3>网页前端</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+        <p>前端没什么可以多说的，毕竟我们重点不是在前端。我们只追求也面的简洁，功能的完善。</p>
 
-<h3>Rather Drive Stick?</h3>
+        <h3>网页后台</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+        <p>web服务器我们使用<code>php+mysql+apache</code>架构，而matlab web server安装在另外一台机器上，这台机器上也安装有web服务器作为一个文件服务器，因为matlab处理后的图片等文件存在matlab web server的机器上。在这里我们使用codeigniter(CI，一种php框架)框架，这是一款小巧但是效率很高的框架。相比yii，CI更符合我们的要求。</p>
 
-<h3>Authors and Contributors</h3>
+        
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+        <h3>Matlab部分</h3>
 
-<h3>Support or Contact</h3>
+        <p>Matlab在这里是核心，没有m文件就不能处理任何数据。这里面你需要了解matlab指令以及m文件的编写，对于信号处理的一些知识也可以了解下，这对于以后的工作会很有帮助。</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+        <p>普通的m文件编写很简单，但是这里需要运用到matlab web server中，因此，编写还是有些要注意的。您可以点击<a href="./mfile.html">这里</a>，学习该应用中m文件的编写。如果您只负责matlab部分，那你可以不用理会其他，只需要看着部分就行了。</p>
+
+        <h3>提醒</h3>
+
+        <p>我们的代码托管在github上，详细任务分配可以在其页面中看到。<a href="./sign.html">任务大致分配</a>--这里只列出个人大致负责的范围。</p>
+        <p>全部教程如下：</p>
+        <pre>
+<code><a href="./structure.html">1.网站架构分析</a>
+<a href="./theoryofmatweb.html">2.Matlab Web Server工作原理</a>
+<a href="./mfile.hmtl">3.matweb中m文件的编写</a>
+</code>
+        </pre>
+
+        <h3>写在最后</h3>
+
+        <p>最后，希望我们能够完美合作，完成这个项目！</p>
       </section>
     </div>
 
